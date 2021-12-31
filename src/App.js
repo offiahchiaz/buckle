@@ -1,10 +1,11 @@
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import Navbar from './Components/layout/Navbar';
 
 function App() {
   return (
     <Router>
       <div className="App">
-        <h1>Hellow Buckle</h1>
+        <Navbar />
       </div>
     </Router>
   );
