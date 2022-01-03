@@ -1,9 +1,11 @@
-const ProjectDetails = () => {
+const ProjectDetails = (props) => {
+  const id = props.match.params.id;
+
   return ( 
     <div className="container section project-details">
       <div className="card z-depth-0">
         <div className="card-content">
-          <span className="card-title">Project Title</span>
+          <span className="card-title">Project Title - { id }</span>
           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae, natus! 
             Sunt nobis autem tempore. Doloribus, commodi aperiam adipisci inventore esse 
             consequatur quibusdam! Deleniti distinctio libero sapiente recusandae fugit. 
